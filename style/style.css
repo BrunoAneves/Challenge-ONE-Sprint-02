@@ -5,9 +5,30 @@
   margin-top: 30px;
 }
 
+.container-titulo {
+  margin-bottom: 100px;
+}
+
 .container-img {
+  background-image: url("../svg/1.svg");
   width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
   margin-bottom: 30px;
+}
+
+.container-palavra-secreta {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.container-letra {
+  padding: 0 5px 0 5px;
+  border-bottom: 5px solid #0a3871;
+  border-radius: 3px;
 }
 
 .containe-teclado {
@@ -20,3 +41,23 @@
   width: 40px;
   height: 40px;
 }
+
+.container-teclas button:hover {
+  border: 1px solid black;
+  border-radius: 2px;
+  background: #d8dfe8;
+}
+
+.container-teclas button:focus {
+  border: 1px solid black;
+  border-radius: 2px;
+  color: #ffffff;
+  background: #0a3871;
+}
+
+.container-teclas #tecla-reiniciar {
+  width: 85px;
+}
+/* .container-teclas #tecla-dica {
+  height: 85px;
+} */

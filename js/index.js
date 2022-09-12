@@ -70,6 +70,7 @@ function verificaLetra(letra) {
   const posicao = palavraSorteada.indexOf(letra);
   if (posicao < 0) {
     contadorChances--;
+    mudaImagensForca();
   } else {
     for (i = 0; i < palavraSorteada.length; i++) {
       if (palavraSorteada[i] == letra) {
@@ -84,7 +85,40 @@ function verificaLetra(letra) {
     }
   }
   if (vitoria) {
-    alert("ganhou");
     contadorChances = 0;
+  }
+}
+
+function mudaImagensForca() {
+  switch (contadorChances) {
+    case 5:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/2.svg')";
+      break;
+    case 4:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/3.svg')";
+      break;
+    case 3:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/4.svg')";
+      break;
+    case 2:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/5.svg')";
+      break;
+    case 1:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/6.svg')";
+      break;
+
+    case 0:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/total.svg')";
+      break;
+    default:
+      document.querySelector(".container-img").style.backgroundImage =
+        "url('../svg/1.svg')";
+      break;
   }
 }

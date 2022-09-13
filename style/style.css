@@ -62,8 +62,22 @@
   background: #d8dfe8;
 }
 
+#teclaReiniciar:focus {
+  color: #ffffff;
+  background-color: #0a3871;
+}
+
 .container-teclas #teclaReiniciar {
   width: 85px;
+}
+
+#teclaDesistir:focus {
+  color: #ffffff;
+  background-color: #0a3871;
+}
+
+.container-teclas button:disabled {
+  cursor: not-allowed;
 }
 
 .footer-total {

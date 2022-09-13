@@ -2,6 +2,8 @@ let contadorChances = 6;
 let listaDinamica = [];
 let palavraSorteada;
 let dicaSorteada;
+let reiniciar = document.querySelector("#teclaReiniciar");
+let desistir = document.querySelector("#teclaDesistir");
 
 const listaPalavras = [
   (palavra001 = {
@@ -9,7 +11,7 @@ const listaPalavras = [
     dica: "FRUTA",
   }),
   (palavra002 = {
-    nome: "SAO LUIS",
+    nome: "MIRINZAL",
     dica: "LUGAR",
   }),
   (palavra002 = {
@@ -18,10 +20,19 @@ const listaPalavras = [
   }),
 ];
 
+function bntReiniciar() {
+  document.location.reload(true);
+}
+reiniciar.onclick = bntReiniciar;
+
+function bntDesistir() {
+  mensagemDerrota();
+}
+desistir.onclick = bntDesistir;
+
 function geradorDePalavras() {
   const palavra = parseInt(Math.random() * listaPalavras.length);
   palavraSorteada = listaPalavras[palavra].nome;
-  console.log(palavraSorteada);
   dicaSorteada = listaPalavras[palavra].dica;
 }
 geradorDePalavras();
@@ -53,6 +64,7 @@ function palavrasNaTela() {
 palavrasNaTela();
 
 function teclaClicada(letra) {
+  document.querySelector("#tecla" + letra).disabled = true;
   if (contadorChances > 0) {
     mudarStilo("tecla" + letra);
     verificaLetra(letra);
@@ -71,6 +83,10 @@ function verificaLetra(letra) {
   if (posicao < 0) {
     contadorChances--;
     mudaImagensForca();
+
+    if (contadorChances == 0) {
+      setTimeout(mensagemDerrota, 100);
+    }
   } else {
     for (i = 0; i < palavraSorteada.length; i++) {
       if (palavraSorteada[i] == letra) {
@@ -86,7 +102,16 @@ function verificaLetra(letra) {
   }
   if (vitoria) {
     contadorChances = 0;
+    setTimeout(mensagemVitoria, 100);
   }
+}
+
+function mensagemDerrota() {
+  alert("Você perdeu!" + "\n" + "A palavra é " + palavraSorteada);
+}
+
+function mensagemVitoria() {
+  alert("Você ganhou!");
 }
 
 function mudaImagensForca() {

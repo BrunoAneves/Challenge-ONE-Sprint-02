@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/reset.css">
-  <link rel="stylesheet" href="./style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+
   <title>Challenge ONE- Jogo da Forca</title>
 </head>
 
@@ -18,6 +22,24 @@
   <header class="container-titulo">
     <h1>Jogo da Forca</h1>
   </header>
+
+
+  <div class="container-botoes-inicial">
+    <button class="bntIniciar">iniciar</button>
+    <button class="bntEscolherSuaPalavra">jogar com sua palavra</button>
+  </div>
+
+
+  <form action="./" class="container-form">
+    <label for="palavra">Digite a Palavra</label>
+    <input type="text" id="palavra" pattern="[A-Za-z]+$">
+
+    <label for="dica">Digite a Dica</label>
+    <input type="text" name="dica" id="dica">
+
+    <button class="bnt-cotainer-form">OK</button>
+    <p>OBS: Apenas palavras sem acentuação e espaçamento.</p>
+  </form>
 
   <main class="container-total">
 
@@ -66,9 +88,10 @@
         <button id="teclaB" onclick="teclaClicada('B')">B</button>
         <button id="teclaN" onclick="teclaClicada('N')">N</button>
         <button id="teclaM" onclick="teclaClicada('M')">M</button>
-        <button id="teclaReiniciar">reiniciar</button>
+        <button id="teclaReiniciar">Reiniciar</button>
         <button id="teclaDesistir">🏳️</button>
       </div>
+
     </div>
   </main>
 

@@ -26,20 +26,20 @@
 
   <div class="container-botoes-inicial">
     <button class="bntIniciar">iniciar</button>
-    <button class="bntEscolherSuaPalavra">jogar com sua palavra</button>
+    <button class="bntEscolherPalavra">jogar com sua palavra</button>
   </div>
 
-
-  <form action="./" class="container-form">
+  <form class="container-form">
     <label for="palavra">Digite a Palavra</label>
-    <input type="text" id="palavra" pattern="[A-Za-z]+$">
+    <input type="text" id="palavra" required pattern="[A-Za-z]+$">
 
     <label for="dica">Digite a Dica</label>
-    <input type="text" name="dica" id="dica">
+    <input type="text" name="dica" id="dica" required>
 
-    <button class="bnt-cotainer-form">OK</button>
+    <button type="submit" class="bnt-container-form">OK</button>
     <p>OBS: Apenas palavras sem acentuação e espaçamento.</p>
   </form>
+
 
   <main class="container-total">
 

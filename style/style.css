@@ -34,11 +34,10 @@
 }
 
 .container-form {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   margin-top: 150px;
-  /* display: none; */
 }
 
 .container-form input {
@@ -51,7 +50,7 @@
   text-transform: uppercase;
 }
 
-.bnt-cotainer-form {
+.bnt-container-form {
   background-color: #9bb7db;
   color: #ffffff;
   border: 1px solid #d8dfe8;
@@ -61,21 +60,18 @@
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0px 1px 2px dimgray;
+  margin: 0 auto;
 }
-.container-form p {
-  color: #0a3871;
-  font-size: 0.9rem;
-  margin-top: 20px;
-  text-align: center;
+.bnt-container-form2 {
+  display: flex;
 }
 
 .container-total {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 30px;
-  display: none;
 }
 
 .container-dica {

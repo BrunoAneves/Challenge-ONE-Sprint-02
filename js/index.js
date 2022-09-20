@@ -356,35 +356,38 @@ function mensagemVitoria() {
 }
 
 function mudaImagensForca() {
+  let imagem = [
+    "svg/1.svg",
+    "svg/2.svg",
+    "svg/3.svg",
+    "svg/4.svg",
+    "svg/5.svg",
+    "svg/6.svg",
+    "svg/total.svg",
+  ];
+
   switch (contadorChances) {
     case 5:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/2.svg')";
+      document.querySelector(".container-img").src = imagem[1];
       break;
     case 4:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/3.svg')";
+      document.querySelector(".container-img").src = imagem[2];
       break;
     case 3:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/4.svg')";
+      document.querySelector(".container-img").src = imagem[3];
       break;
     case 2:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/5.svg')";
+      document.querySelector(".container-img").src = imagem[4];
       break;
     case 1:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/6.svg')";
+      document.querySelector(".container-img").src = imagem[5];
       break;
 
     case 0:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/total.svg')";
+      document.querySelector(".container-img").src = imagem[6];
       break;
     default:
-      document.querySelector(".container-img").style.backgroundImage =
-        "url('../svg/1.svg')";
+      document.querySelector(".container-img").src = imagem[0];
       break;
   }
 }

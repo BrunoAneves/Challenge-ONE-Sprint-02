@@ -249,7 +249,7 @@ const listaPalavras = [
     dica: "OBJETO",
   }),
   (palavra050 = {
-    nome: "ZARABATANAP",
+    nome: "ZARABATANA",
     dica: "OBJETO",
   }),
 ];

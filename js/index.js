@@ -5,7 +5,7 @@ let dicaSorteada;
 let reiniciar = document.querySelector("#teclaReiniciar");
 let desistir = document.querySelector("#teclaDesistir");
 
-//########################################
+//###################### menu do jogo #####################
 let bntIniciar = document.querySelector(".bntIniciar");
 let bntEscolherPalavra = document.querySelector(".bntEscolherPalavra");
 const containerBotoesInicial = document.querySelector(
@@ -14,7 +14,7 @@ const containerBotoesInicial = document.querySelector(
 
 const containerTotal = document.querySelector(".container-total");
 const containerForm = document.querySelector(".container-form");
-const bntContainerForm = document.querySelector(".bnt-container-form");
+// const bntContainerForm = document.querySelector(".bnt-container-form");
 
 function iniciarJogoDireto() {
   containerTotal.style.display = "flex";
@@ -50,6 +50,7 @@ function geradorDePalavras2() {
 
 //############################################
 
+//################# jogo #################
 const listaPalavras = [
   (palavra001 = {
     nome: "BANANA",
@@ -160,7 +161,7 @@ const listaPalavras = [
     dica: "COMIDA",
   }),
   (palavra028 = {
-    nome: "CARANGUEJADA",
+    nome: "PANQUECA",
     dica: "COMIDA",
   }),
   (palavra029 = {
@@ -176,47 +177,85 @@ const listaPalavras = [
     dica: "ANIMAL",
   }),
   (palavra032 = {
-    nome: "CACHORRO",
+    nome: "ZEBRA",
     dica: "ANIMAL",
   }),
   (palavra033 = {
-    nome: "CACHORRO",
+    nome: "BESOURO",
     dica: "ANIMAL",
   }),
   (palavra034 = {
-    nome: "CACHORRO",
+    nome: "ENGUIA",
     dica: "ANIMAL",
   }),
   (palavra035 = {
-    nome: "CACHORRO",
+    nome: "FUINHA",
     dica: "ANIMAL",
   }),
   (palavra036 = {
-    nome: "CACHORRO",
+    nome: "GIRINO",
     dica: "ANIMAL",
   }),
   (palavra037 = {
-    nome: "CACHORRO",
+    nome: "HIENA",
     dica: "ANIMAL",
   }),
   (palavra038 = {
-    nome: "CACHORRO",
+    nome: "KOALA",
     dica: "ANIMAL",
   }),
   (palavra039 = {
-    nome: "CACHORRO",
+    nome: "LONTRA",
     dica: "ANIMAL",
   }),
   (palavra040 = {
-    nome: "CACHORRO",
+    nome: "TUCANO",
     dica: "ANIMAL",
+  }),
+  (palavra041 = {
+    nome: "AGULHA",
+    dica: "OBJETO",
+  }),
+  (palavra042 = {
+    nome: "ASPIRADOR",
+    dica: "OBJETO",
+  }),
+  (palavra043 = {
+    nome: "BORRACHA",
+    dica: "OBJETO",
+  }),
+  (palavra044 = {
+    nome: "CADEADO",
+    dica: "OBJETO",
+  }),
+  (palavra045 = {
+    nome: "DISQUETE",
+    dica: "OBJETO",
+  }),
+  (palavra046 = {
+    nome: "EDREDOM",
+    dica: "OBJETO",
+  }),
+  (palavra047 = {
+    nome: "FREEZER",
+    dica: "OBJETO",
+  }),
+  (palavra048 = {
+    nome: "GRAMPO",
+    dica: "OBJETO",
+  }),
+  (palavra049 = {
+    nome: "HIDRANTE",
+    dica: "OBJETO",
+  }),
+  (palavra050 = {
+    nome: "ZARABATANAP",
+    dica: "OBJETO",
   }),
 ];
 
 function bntReiniciar() {
-  geradorDePalavras();
-  palavrasNaTela();
-  // document.location.reload(true);
+  document.location.reload(true);
 }
 reiniciar.onclick = bntReiniciar;
 

@@ -40,6 +40,10 @@
   margin-top: 150px;
 }
 
+.container-form label {
+  color: #0a3871;
+}
+
 .container-form input {
   font-size: 1rem;
   padding: 10px;
@@ -47,7 +51,17 @@
   border: 1px solid #0a3871;
   background: #d8dfe8;
   margin-bottom: 20px;
+  margin-top: 5px;
   text-transform: uppercase;
+}
+.container-form p {
+  margin-top: 10px;
+  text-align: center;
+  color: #0a3871;
+}
+
+.container-form button:hover {
+  background-color: #0a3871;
 }
 
 .bnt-container-form {
@@ -61,9 +75,6 @@
   padding: 10px;
   box-shadow: 0px 1px 2px dimgray;
   margin: 0 auto;
-}
-.bnt-container-form2 {
-  display: flex;
 }
 
 .container-total {
@@ -91,6 +102,7 @@
 .container-palavra-secreta {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-family: "Inter", sans-serif;
   color: #0a3871;
   gap: 10px;

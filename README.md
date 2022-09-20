@@ -27,6 +27,8 @@
 
 ## Link no GitHub Pages
 
+https://brunoaneves.github.io/Challenge-ONE-Sprint-02/
+
 ## Tecnologias
 
 <p align="center">
